@@ -2,6 +2,7 @@
 
 ## 📌 GIỚI THIỆU ĐỀ TÀI
 --
+
 Sự phát triển mạnh mẽ của Internet và các nền tảng mạng xã hội đã tạo điều kiện cho thông tin được lan truyền với tốc độ chưa từng có. Tuy nhiên, đi cùng với đó là sự gia tăng của **tin tức giả (Fake News)**, có khả năng tác động tiêu cực đến nhận thức cộng đồng và các quyết định trong đời sống xã hội.
 Đồ án này tập trung xây dựng một **hệ thống tự động phát hiện và phân loại tin tức giả** dựa trên nội dung văn bản. Nhóm thực hiện so sánh hai hướng tiếp cận chính:
 
