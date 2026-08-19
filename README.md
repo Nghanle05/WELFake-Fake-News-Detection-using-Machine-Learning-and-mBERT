@@ -1,5 +1,12 @@
 # 📰 Fake News Detection using Machine Learning & mBERT
 
+## 👨‍👩‍👧‍👦 THÀNH VIÊN
+| STT | MSSV | Họ tên | Email |
+|:---:|:----------:|:-----------------:|:--------------------:|
+| 1 | 23520438 | Trần Ngọc Khả Hân | 23520438@gm.uit.edu.vn |
+| 2 | 23520285 | Lương Kiều Diễm | 23520285@gm.uit.edu.vn |
+| 3 | 23520430 | Lê Thị Ngọc Hân | 23520430@gm.uit.edu.vn |
+
 ## 📌 GIỚI THIỆU ĐỀ TÀI
 
 Sự phát triển mạnh mẽ của Internet và các nền tảng mạng xã hội đã tạo điều kiện cho thông tin được lan truyền với tốc độ chưa từng có. Tuy nhiên, đi cùng với đó là sự gia tăng của **tin tức giả (Fake News)**, có khả năng tác động tiêu cực đến nhận thức cộng đồng và các quyết định trong đời sống xã hội.
