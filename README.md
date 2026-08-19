@@ -42,7 +42,7 @@ Bộ dữ liệu ban đầu có phân bố tương đối cân bằng giữa hai
 
 ## 🧹 QUY TRÌNH THỰC NGHIỆM
 
-![Quy trình thực nghiệm phát hiện tin giả](images/quy trình tổng thể.png)
+![Quy trình thực nghiệm phát hiện tin giả](images/framework.png)
 
 Sau quá trình làm sạch, số lượng mẫu giảm từ **72,134 → 63,279**.
 | Giai đoạn xử lý | Số lượng mẫu còn lại | Số lượng mẫu đã loại bỏ |
@@ -138,19 +138,11 @@ Phân tích dữ liệu cho thấy một số đặc trưng liên quan đến ng
 - Việc tích hợp các phương pháp giải thích mô hình sẽ giúp tăng tính minh bạch và mức độ tin cậy của hệ thống
 
 ## 📌 KẾT LUẬN
-Nhóm đã thực hiện thành công việc xây dựng và đánh giá toàn diện hệ thống 
-phân loại tin giả tự động dựa trên tập dữ liệu lớn WELFake. Quy trình tiền xử lý văn 
-bản thiết kế riêng cho BERT đã chứng minh tính đúng đắn khi bảo toàn được các tín 
-hiệu ngữ nghĩa quan trọng từ chữ viết hoa và dấu câu, kết hợp hiệu quả với thuật toán 
-khử trùng lặp gần đúng để bảo vệ tính khách quan cho dữ liệu thực nghiệm. 
-Kết quả thực chứng khẳng định mô hình học sâu mBERT đạt hiệu năng tối ưu 
-tuyệt đối với độ chính xác 99.18% và điểm F1-macro 0.9917, vượt trội hoàn toàn so 
-với thuật toán tốt nhất của trường phái học máy truyền thống là Linear SVM (97.42%). 
-Mặc dù thực nghiệm đối chứng đã chỉ ra sự tồn tại của các "đường tắt" hệ thống dựa 
-trên tên nguồn tin làm ảnh hưởng nhẹ đến điểm số thực tế, mô hình vẫn bảo toàn được 
-năng lực phân loại ngữ nghĩa cốt lõi. Nghiên cứu này đặt nền móng vững chắc cho 
-việc triển khai các ứng dụng bộ lọc tin tức tự động quy mô lớn trên thực tế nhằm bảo 
-vệ không gian mạng an toàn. 
+Nhóm đã thực hiện thành công việc xây dựng và đánh giá toàn diện hệ thống phân loại tin giả tự động dựa trên tập dữ liệu lớn WELFake. 
+Quy trình tiền xử lý văn bản thiết kế riêng cho BERT đã chứng minh tính đúng đắn khi bảo toàn được các tín hiệu ngữ nghĩa quan trọng từ chữ viết hoa và dấu câu, kết hợp hiệu quả với thuật toán khử trùng lặp gần đúng để bảo vệ tính khách quan cho dữ liệu thực nghiệm. 
+Kết quả thực chứng khẳng định mô hình học sâu mBERT đạt hiệu năng tối ưu tuyệt đối với độ chính xác 99.18% và điểm F1-macro 0.9917, vượt trội hoàn toàn so với thuật toán tốt nhất của trường phái học máy truyền thống là Linear SVM (97.42%). 
+Mặc dù thực nghiệm đối chứng đã chỉ ra sự tồn tại của các "đường tắt" hệ thống dựa trên tên nguồn tin làm ảnh hưởng nhẹ đến điểm số thực tế, mô hình vẫn bảo toàn được năng lực phân loại ngữ nghĩa cốt lõi. 
+Nghiên cứu này đặt nền móng vững chắc cho việc triển khai các ứng dụng bộ lọc tin tức tự động quy mô lớn trên thực tế nhằm bảo vệ không gian mạng an toàn. 
 
 
 
