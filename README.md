@@ -1,7 +1,6 @@
 # 📰 Fake News Detection using Machine Learning & mBERT
 
 ## 📌 GIỚI THIỆU ĐỀ TÀI
---
 
 Sự phát triển mạnh mẽ của Internet và các nền tảng mạng xã hội đã tạo điều kiện cho thông tin được lan truyền với tốc độ chưa từng có. Tuy nhiên, đi cùng với đó là sự gia tăng của **tin tức giả (Fake News)**, có khả năng tác động tiêu cực đến nhận thức cộng đồng và các quyết định trong đời sống xã hội.
 Đồ án này tập trung xây dựng một **hệ thống tự động phát hiện và phân loại tin tức giả** dựa trên nội dung văn bản. Nhóm thực hiện so sánh hai hướng tiếp cận chính:
@@ -11,7 +10,7 @@ Sự phát triển mạnh mẽ của Internet và các nền tảng mạng xã h
 
 Mục tiêu của đồ án không chỉ là tìm ra mô hình có hiệu năng cao mà còn tiến hành **phân tích lỗi, kiểm tra shortcut learning và potential data leakage**, từ đó đánh giá mức độ tin cậy của kết quả thực nghiệm.
 
-###🎯 MỤC TIÊU 
+### 🎯 MỤC TIÊU 
 | # | Mục tiêu |
 |:---:|:---|
 | **01** | Khảo sát và phân tích bộ dữ liệu **WELFake** |
@@ -21,7 +20,7 @@ Mục tiêu của đồ án không chỉ là tìm ra mô hình có hiệu năng 
 | **05** | Đề xuất các hướng phát triển cho hệ thống |
 
 ## 📊 BỘ DỮ LIỆU 
---
+
 Đồ án sử dụng bộ dữ liệu **WELFake**, một bộ dữ liệu dành cho bài toán Fake News Detection được tổng hợp từ nhiều nguồn dữ liệu khác nhau.
 | Thành phần | Thông tin |
 |:---|:---|
@@ -42,8 +41,8 @@ Mục tiêu của đồ án không chỉ là tìm ra mô hình có hiệu năng 
 Bộ dữ liệu ban đầu có phân bố tương đối cân bằng giữa hai lớp Fake News và Real News.
 
 ## 🧹 QUY TRÌNH THỰC NGHIỆM
---
-![Quy trình thực nghiệm phát hiện tin giả]()
+
+![Quy trình thực nghiệm phát hiện tin giả](images/quy trình tổng thể.png)
 
 Sau quá trình làm sạch, số lượng mẫu giảm từ **72,134 → 63,279**.
 | Giai đoạn xử lý | Số lượng mẫu còn lại | Số lượng mẫu đã loại bỏ |
@@ -54,7 +53,7 @@ Sau quá trình làm sạch, số lượng mẫu giảm từ **72,134 → 63,279
 | Khử trùng lặp gần đúng | **63,279** | **8,731** |
 
 ## 🤖 MÔ HÌNH THỰC NGHIỆM 
---
+
 ### Mô hình học máy truyền thống 
 Các mô hình học máy truyền thống sử dụng **TF-IDF** để chuyển đổi văn bản thành vector đặc trưng. 
 | Phân loại | Các mô hình |
@@ -84,7 +83,7 @@ Thay vì biểu diễn văn bản dựa chủ yếu trên tần suất xuất hi
 | **Best Model Metric** | `F1-Macro` |
 
 ## 📈 KẾT QUẢ THỰC NGHIỆM 
--- 
+
 Các mô hình được đánh giá dựa trên:
 
 | Chỉ số đánh giá | Mô tả |
@@ -124,15 +123,15 @@ Linear SVM đạt hiệu năng cao nhất trong nhóm Machine Learning truyền 
 > 💡 **Kết luận:** TF-IDF + Linear SVM đã tạo ra một baseline rất mạnh. Tuy nhiên, mBERT vẫn đạt hiệu năng cao hơn nhờ khả năng học **trình bày ngữ nghĩa** và khai thác quan hệ ngữ nghĩa trong văn bản.
 
 ## 🔍 PHÂN TÍCH LỖI 
---
+
 Mặc dù mô hình đạt Accuracy rất cao, kết quả cần được kiểm tra để xác định liệu mô hình thực sự học được **nội dung và ngữ nghĩa của tin tức** hay đang tận dụng những đặc trưng bề mặt của dataset.
 
 Phân tích dữ liệu cho thấy một số đặc trưng liên quan đến nguồn tin có phân bố rất khác nhau giữa hai lớp.
 
-![Shortcut phân bố lệch giữa 2 lớp]()
+![Shortcut phân bố lệch giữa 2 lớp](images/shortcut.png)
 
 ## 🌍 HƯỚNG PHÁT TRIỂN TRONG TƯƠNG LAI 
---
+
 - Việc mở rộng sang các bộ dữ liệu đa ngôn ngữ hoặc dữ liệu tiếng Việt sẽ giúp đánh giá tốt hơn khả năng thích nghi của mô hình trong các bối cảnh khác nhau.
 - Khai thác thêm các nguồn thông tin ngoài nội dung văn bản
 - Các mô hình Transformer thế hệ mới như RoBERTa, DeBERTa hoặc các mô hình ngôn ngữ lớn (Large Language Models - LLMs) đang cho thấy hiệu quả vượt trội trong nhiều bài toán xử lý ngôn ngữ tự nhiên. Việc nghiên cứu và áp dụng các mô hình này cho bài toán phát hiện tin giả là một hướng đi đầy triển vọng nhằm nâng cao độ chính xác và khả năng suy luận của hệ thống.
